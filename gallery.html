@@ -1,37 +1,10 @@
+{% extends "base.html" %}
 
-<!DOCTYPE html>
-<html lang="en">
+{% block title %}Gallery | Yvonne's Clothen Shattle{% endblock %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | Yvonne's Clothen Shattle</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+{% block nav_gallery %}active{% endblock %}
 
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="index.html">Yvonne's Clothen Shattle</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="gallery.html" class="active">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </header>
-
+{% block content %}
   <!-- Gallery Section -->
   <section class="gallery-hero">
     <div class="container">
@@ -53,127 +26,51 @@
         <div class="gallery-item formal">
           <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=600" alt="Formal Office Wear">
           <div class="gallery-overlay">
-            <h3>Formal Collection</h3>
-            <p>Classic Trousers</p>
+            <h3>Classic Elegance</h3>
+            <p>Our signature trousers in a professional setting</p>
           </div>
         </div>
-        
+
         <div class="gallery-item casual">
-          <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=600" alt="Casual Office Wear">
+          <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=600" alt="Casual Office Style">
           <div class="gallery-overlay">
-            <h3>Casual Collection</h3>
-            <p>Wide Leg Pants</p>
+            <h3>Casual Comfort</h3>
+            <p>Perfect for those relaxed office days</p>
           </div>
         </div>
-        
+
         <div class="gallery-item business">
-          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=600" alt="Business Office Wear">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=600" alt="Business Meeting">
           <div class="gallery-overlay">
-            <h3>Business Collection</h3>
-            <p>Slim Fit Slacks</p>
+            <h3>Executive Style</h3>
+            <p>Make an impression in the boardroom</p>
           </div>
         </div>
-        
+
         <div class="gallery-item formal">
-          <img src="https://images.unsplash.com/photo-1582552938357-32b906df40cb?q=80&w=600" alt="Formal Office Wear">
+          <img src="https://images.unsplash.com/photo-1582552938357-32b906df40cb?q=80&w=600" alt="Dressed Up">
           <div class="gallery-overlay">
-            <h3>Formal Collection</h3>
-            <p>Pleated Dress Pants</p>
+            <h3>Refined Tailoring</h3>
+            <p>Attention to every detail</p>
           </div>
         </div>
-        
+
         <div class="gallery-item casual">
-          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=600" alt="Casual Office Wear">
+          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=600" alt="Smart Casual">
           <div class="gallery-overlay">
-            <h3>Casual Collection</h3>
-            <p>Vintage High-Waist</p>
+            <h3>Relaxed Sophistication</h3>
+            <p>Effortlessly stylish for any occasion</p>
           </div>
         </div>
-        
+
         <div class="gallery-item business">
-          <img src="https://images.unsplash.com/photo-1608234307301-9a5cb72891ee?q=80&w=600" alt="Business Office Wear">
+          <img src="https://images.unsplash.com/photo-1608234307301-9a5cb72891ee?q=80&w=600" alt="Professional Look">
           <div class="gallery-overlay">
-            <h3>Business Collection</h3>
-            <p>Modern Cut Trousers</p>
-          </div>
-        </div>
-        
-        <div class="gallery-item formal">
-          <img src="https://images.unsplash.com/photo-1632149877166-f75d49000351?q=80&w=600" alt="Formal Office Wear">
-          <div class="gallery-overlay">
-            <h3>Formal Collection</h3>
-            <p>Executive Pants</p>
-          </div>
-        </div>
-        
-        <div class="gallery-item casual">
-          <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=600" alt="Casual Office Wear">
-          <div class="gallery-overlay">
-            <h3>Casual Collection</h3>
-            <p>Relaxed Fit Trousers</p>
-          </div>
-        </div>
-        
-        <div class="gallery-item business">
-          <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?q=80&w=600" alt="Business Office Wear">
-          <div class="gallery-overlay">
-            <h3>Business Collection</h3>
-            <p>Professional Slacks</p>
+            <h3>Modern Professional</h3>
+            <p>Contemporary style meets classic craftsmanship</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Yvonne's Clothen Shattle</h3>
-          <p>Premium office pants with vintage elegance and modern comfort.</p>
-        </div>
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cart.html">Cart</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Support</h3>
-          <ul>
-            <li><a href="#">Shipping & Returns</a></li>
-            <li><a href="#">Size Guide</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Connect</h3>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-pinterest-p"></i></a>
-          </div>
-          <p>Sign up for our newsletter:</p>
-          <div class="newsletter-form">
-            <input type="email" placeholder="Your email address">
-            <button type="submit">Subscribe</button>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2023 Yvonne's Clothen Shattle. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
-</html>
+{% endblock %}
