@@ -171,3 +171,228 @@
     </div>
   </section>
 {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Yvonne's Clothen Shattle</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Yvonne's Clothen Shattle</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Shop Section -->
+  <section class="shop-hero">
+    <div class="container">
+      <h2 class="section-title">Our Collection</h2>
+      <p class="shop-subtitle">Premium office wear for the modern professional</p>
+    </div>
+  </section>
+
+  <section class="shop-products">
+    <div class="container">
+      <div class="shop-layout">
+        <div class="shop-sidebar">
+          <div class="filter-section">
+            <h3>Categories</h3>
+            <ul class="filter-list">
+              <li><a href="#" class="active">All Products</a></li>
+              <li><a href="#">Formal Pants</a></li>
+              <li><a href="#">Casual Slacks</a></li>
+              <li><a href="#">Business Trousers</a></li>
+              <li><a href="#">Wide Leg</a></li>
+            </ul>
+          </div>
+
+          <div class="filter-section">
+            <h3>Size</h3>
+            <ul class="size-filters filter-list">
+              <li><a href="#">XS</a></li>
+              <li><a href="#">S</a></li>
+              <li><a href="#">M</a></li>
+              <li><a href="#">L</a></li>
+              <li><a href="#">XL</a></li>
+              <li><a href="#">XXL</a></li>
+            </ul>
+          </div>
+
+          <div class="filter-section">
+            <h3>Color</h3>
+            <div class="color-filters">
+              <div class="color-filter" style="background-color: #222;" title="Black"></div>
+              <div class="color-filter" style="background-color: #556;" title="Navy"></div>
+              <div class="color-filter" style="background-color: #999;" title="Gray"></div>
+              <div class="color-filter" style="background-color: #a52a2a;" title="Brown"></div>
+              <div class="color-filter" style="background-color: #f5f5dc;" title="Beige"></div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h3>Price Range</h3>
+            <div class="price-slider">
+              <input type="range" min="0" max="200" value="100" class="slider" id="priceRange">
+              <div class="price-range-display">$0 - $<span id="priceValue">100</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-products-grid">
+          <div class="shop-header">
+            <div class="products-count">Showing 1-9 of 24 products</div>
+            <div class="sort-options">
+              <select>
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=400" alt="Classic Trousers">
+              </div>
+              <div class="card-content">
+                <h3>Classic Trousers</h3>
+                <p class="product-price">$79.99</p>
+                <button class="btn-secondary add-to-cart" data-id="1" data-name="Classic Trousers" data-price="79.99">Add to Cart</button>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=400" alt="Wide Leg Pants">
+              </div>
+              <div class="card-content">
+                <h3>Wide Leg Pants</h3>
+                <p class="product-price">$89.99</p>
+                <button class="btn-secondary add-to-cart" data-id="2" data-name="Wide Leg Pants" data-price="89.99">Add to Cart</button>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=400" alt="Slim Fit Slacks">
+              </div>
+              <div class="card-content">
+                <h3>Slim Fit Slacks</h3>
+                <p class="product-price">$74.99</p>
+                <button class="btn-secondary add-to-cart" data-id="3" data-name="Slim Fit Slacks" data-price="74.99">Add to Cart</button>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1582552938357-32b906df40cb?q=80&w=400" alt="Pleated Dress Pants">
+              </div>
+              <div class="card-content">
+                <h3>Pleated Dress Pants</h3>
+                <p class="product-price">$94.99</p>
+                <button class="btn-secondary add-to-cart" data-id="4" data-name="Pleated Dress Pants" data-price="94.99">Add to Cart</button>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=400" alt="Vintage High-Waist">
+              </div>
+              <div class="card-content">
+                <h3>Vintage High-Waist</h3>
+                <p class="product-price">$99.99</p>
+                <button class="btn-secondary add-to-cart" data-id="5" data-name="Vintage High-Waist" data-price="99.99">Add to Cart</button>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="card-image">
+                <img src="https://images.unsplash.com/photo-1608234307301-9a5cb72891ee?q=80&w=400" alt="Modern Cut Trousers">
+              </div>
+              <div class="card-content">
+                <h3>Modern Cut Trousers</h3>
+                <p class="product-price">$84.99</p>
+                <button class="btn-secondary add-to-cart" data-id="6" data-name="Modern Cut Trousers" data-price="84.99">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Yvonne's Clothen Shattle</h3>
+          <p>Premium office pants with vintage elegance and modern comfort.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+          <p>Sign up for our newsletter:</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Yvonne's Clothen Shattle. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
