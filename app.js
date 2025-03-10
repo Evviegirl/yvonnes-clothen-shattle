@@ -1,2 +1,2 @@
 
-// This file is not needed with the updated script.js implementation
+// This file is not needed
