@@ -647,7 +647,9 @@ footer {
   text-decoration: none;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   background: linear-gradient(90deg, 
     #ffd700, #f8de7e, #daa520, #ffe87c, #ffd700, 
     #ffec8b, #ffb90f, #ffd700);
@@ -658,15 +660,32 @@ footer {
   display: inline-block;
   animation: sparkle 3s linear infinite;
   position: relative;
+  text-shadow: 0px 0px 3px rgba(252, 163, 17, 0.2);
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, transparent, var(--gold), transparent);
+  border-image-slice: 1;
+  border-width: 0 0 2px 0;
 }
 
+.logo a::before,
 .logo a::after {
   content: '✧';
   position: absolute;
-  top: -5px;
-  right: -15px;
   color: var(--gold);
   font-size: 1rem;
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+.logo a::before {
+  top: -5px;
+  left: -15px;
+  animation-delay: 0.5s;
+}
+
+.logo a::after {
+  top: -5px;
+  right: -15px;
   animation: twinkle 1.5s ease-in-out infinite;
 }
 
