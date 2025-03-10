@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elegant Office Attire</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+{% block title %}Elegant Office Attire | Yvonne's Clothen Shattle{% endblock %}
 
-<body>
+{% block nav_home %}active{% endblock %}
 
-
-
+{% block content %}
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -82,13 +75,4 @@
       </div>
     </div>
   </section>
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Elegant Office Attire. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
-</html>
+{% endblock %}
