@@ -1,11 +1,14 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}{% endblock %}</title>
+  <title>{% block title %}Yvonne's Clothen Shattle{% endblock %}</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  {% block extra_css %}{% endblock %}
 </head>
 <body>
   <header>
@@ -13,10 +16,11 @@
       <h1>Yvonne's Clothen Shattle</h1>
       <nav>
         <ul>
-          <li><a href="/" class="{% block nav_home %}{% endblock %}">Home</a></li>
-          <li><a href="#">Collection</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="index.html" class="{% block nav_home %}{% endblock %}">Home</a></li>
+          <li><a href="shop.html" class="{% block nav_shop %}{% endblock %}">Shop</a></li>
+          <li><a href="about.html" class="{% block nav_about %}{% endblock %}">About</a></li>
+          <li><a href="#" class="{% block nav_contact %}{% endblock %}">Contact</a></li>
+          <li><a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
         </ul>
       </nav>
       <div class="hamburger">
@@ -27,9 +31,7 @@
     </div>
   </header>
 
-  {% block content %}
-  {% endblock %}
-
+  {% block content %}{% endblock %}
 
   <footer>
     <div class="container">
@@ -41,10 +43,11 @@
         <div class="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Collection</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
           </ul>
         </div>
         <div class="footer-section">
@@ -60,5 +63,6 @@
   </footer>
 
   <script src="script.js"></script>
+  {% block extra_js %}{% endblock %}
 </body>
 </html>
