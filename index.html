@@ -1,64 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %}{% endblock %}</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
+
+{% extends "base.html" %}
+
+{% block title %}Home | Yvonne's Clothen Shattle{% endblock %}
+
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+  <section class="hero">
     <div class="container">
-      <h1>Yvonne's Clothen Shattle</h1>
-      <nav>
-        <ul>
-          <li><a href="/" class="{% block nav_home %}{% endblock %}">Home</a></li>
-          <li><a href="#">Collection</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="hero-content">
+        <h2>Elegant Office <span>Attire</span></h2>
+        <p>Discover our collection of premium office pants, designed with vintage elegance and modern comfort.</p>
+        <a href="shop.html" class="btn-primary">Shop Now</a>
       </div>
     </div>
-  </header>
+  </section>
 
-  {% block content %}
-  {% endblock %}
-
-
-  <footer>
+  <section class="categories">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>Yvonne's Clothen Shattle</h3>
-          <p>Vintage office elegance since 1985</p>
+      <h2 class="section-title">Browse by <span>Category</span></h2>
+      <div class="category-grid">
+        <div class="category-item">
+          <img src="https://images.unsplash.com/photo-1580651214613-f4692d6d138f?q=80&w=400" alt="Formal">
+          <h3>Formal</h3>
         </div>
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">Collection</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="category-item">
+          <img src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?q=80&w=400" alt="Casual">
+          <h3>Casual</h3>
         </div>
-        <div class="footer-section">
-          <h3>Contact</h3>
-          <p>123 Fashion Avenue<br>Style City, SC 45678</p>
-          <p>Email: info@yvonnescs.com</p>
+        <div class="category-item">
+          <img src="https://images.unsplash.com/photo-1591195853866-83b3f9194f3e?q=80&w=400" alt="Business">
+          <h3>Business</h3>
         </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2023 Yvonne's Clothen Shattle. All rights reserved.</p>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <section class="featured">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Collection</span></h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=400" alt="Classic Trousers">
+          </div>
+          <div class="card-content">
+            <h3>Classic Trousers</h3>
+            <p>Timeless elegance for the modern professional</p>
+            <button class="btn-secondary add-to-cart" data-id="1" data-name="Classic Trousers" data-price="79.99">Add to Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=400" alt="Wide Leg Pants">
+          </div>
+          <div class="card-content">
+            <h3>Wide Leg Pants</h3>
+            <p>Comfort meets style with our signature wide-leg design</p>
+            <button class="btn-secondary add-to-cart" data-id="2" data-name="Wide Leg Pants" data-price="89.99">Add to Cart</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?q=80&w=400" alt="Slim Fit Slacks">
+          </div>
+          <div class="card-content">
+            <h3>Slim Fit Slacks</h3>
+            <p>Tailored perfection for the contemporary office</p>
+            <button class="btn-secondary add-to-cart" data-id="3" data-name="Slim Fit Slacks" data-price="74.99">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
