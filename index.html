@@ -1,11 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
 
-{% extends "base.html" %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Office Attire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-{% block title %}Home | Yvonne's Clothen Shattle{% endblock %}
+<body>
 
-{% block nav_home %}active{% endblock %}
 
-{% block content %}
+
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -47,7 +53,8 @@
           <div class="card-content">
             <h3>Classic Trousers</h3>
             <p>Timeless elegance for the modern professional</p>
-            <button class="btn-secondary add-to-cart" data-id="1" data-name="Classic Trousers" data-price="79.99">Add to Cart</button>
+            <button class="btn-secondary add-to-cart" data-id="1" data-name="Classic Trousers" data-price="79.99">Add to
+              Cart</button>
           </div>
         </div>
         <div class="card">
@@ -57,7 +64,8 @@
           <div class="card-content">
             <h3>Wide Leg Pants</h3>
             <p>Comfort meets style with our signature wide-leg design</p>
-            <button class="btn-secondary add-to-cart" data-id="2" data-name="Wide Leg Pants" data-price="89.99">Add to Cart</button>
+            <button class="btn-secondary add-to-cart" data-id="2" data-name="Wide Leg Pants" data-price="89.99">Add to
+              Cart</button>
           </div>
         </div>
         <div class="card">
@@ -67,10 +75,20 @@
           <div class="card-content">
             <h3>Slim Fit Slacks</h3>
             <p>Tailored perfection for the contemporary office</p>
-            <button class="btn-secondary add-to-cart" data-id="3" data-name="Slim Fit Slacks" data-price="74.99">Add to Cart</button>
+            <button class="btn-secondary add-to-cart" data-id="3" data-name="Slim Fit Slacks" data-price="74.99">Add to
+              Cart</button>
           </div>
         </div>
       </div>
     </div>
   </section>
-{% endblock %}
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Elegant Office Attire. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
