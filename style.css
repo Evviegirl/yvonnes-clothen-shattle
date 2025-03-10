@@ -629,6 +629,58 @@ footer {
 }
 
 .quantity {
+
+/* Logo Animation */
+@keyframes sparkle {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, 
+    #ffd700, #f8de7e, #daa520, #ffe87c, #ffd700, 
+    #ffec8b, #ffb90f, #ffd700);
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: sparkle 3s linear infinite;
+  position: relative;
+}
+
+.logo a::after {
+  content: '✧';
+  position: absolute;
+  top: -5px;
+  right: -15px;
+  color: var(--gold);
+  font-size: 1rem;
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
   margin: 0 10px;
   font-weight: 700;
 }
